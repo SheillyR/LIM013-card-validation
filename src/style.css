@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    
+    background-image: url('images/cover.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 54px;
+    text-shadow: 0 0 30px #fff;
+}
+
+.display{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+.welcome{
+    margin: 0;
+    overflow:auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.images-container{
+    float: left;
+    width: 45%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.slides{
+    width: 740px;
+    height: 424px;
+}
+
+.text-container {
+    float: right;
+    width: 44%;
+    margin-right: 4%;
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  .size-box-text{
+      width: 100%;
+      height: 460px;
+  }
+
+.first-button{
+    margin-left: 43%;
+    margin-top: 32%;
+}
+
+.style-button{
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color:yellow;
+    box-shadow: 5px 5px black;
+}
+
+.style-button:hover {background-color:#FFF633}
+
+.style-button:active {
+    background-color:#FFF633;
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 0 0 30px #fff;
+}
+
+input[type=text], [type=email], [type=tel],[type=number]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    height: 39px;
+}
+
+.style-box{
+    width: 100%;
+}
+
+.side-by-side{
+    display:flex;
+}
+
+fieldset{
+    margin: -10px auto 15px -51px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #F0F0F0;
+    padding: 1em;
+    width: 310px;
+    
+}
+
+legend{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.style-buttons{
+    display:inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color:yellow;
+    box-shadow: 5px 5px black;
+    
+}
+
+.style-buttons:hover {background-color:#FFF633}
+
+.style-buttons:active {
+    background-color:#FFF633;
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}
+.container{
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 67%;
+    background: white;
+    /*
+    background: rgb(245,245,245);
+    */
+    padding: 40px 100px 40px 100px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px #8510d8;
+}
+
+.position{
+    position: relative;
+
+}
+
+.style-choose{
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    outline: none;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px black;
+}
+
+.style-choose:hover {
+    background-color:#ff00ff;
+    color: white;
+}
+
+.style-choose:active {
+    background-color:#e619e5;
+    color: white;
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}
+
+h3{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #600060;
+    background: #FF9FFF;
+    margin-top: -40px;
+    margin-left: -100px;
+    margin-right: -100px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.center-images-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-payment{
+    background-color: #F0F0F0;
+}
+
+
+
+
+
+
+
+
