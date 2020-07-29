@@ -80,18 +80,24 @@
                 <input type="radio" id="ninety" class="donationamount" name="cost">
                 <label for="ninety">S/.90</label>
               </div>
-            <input type="number" id="otheramount" name="otheramount" placeholder="Otro monto (S/.)">
+            <input type="number" id="otheramount" name="otheramount" placeholder="Otro monto (S/.)" class="style-box">
           </fieldset>
           <fieldset class="register">
             <legend>Información Personal</legend>
             <div class="side-by-side">
-              <input type="text" id="name" name="user-name" placeholder="Nombre">
-              <input type="text" id="lastName" name="user-lastname" placeholder="Apellido">
+              <input type="text" id="name" name="user-name" placeholder="Nombre" class="style-sbs">
+              <input type="text" id="lastName" name="user-lastname" placeholder="Apellido" class="style-sbs">
             </div>
             <input type="email" id="mail" name="user-email" placeholder="Correo electrónico" class="style-box">
             <input type="tel" id="phone" name="user-phone" placeholder="Número celular" pattern="[0-9]{9}" class="style-box">
             <div class="side-by-side">
-              <input type="text" id="dni" name="user-dni" placeholder="Documento">
+              <select name="document" id="document" class="style-sbs">
+                <option value="">Tipo de documento</option>
+                <option value="dni">DNI</option>
+                <option value="carnet-ext">CARNET EXT.</option>
+                <option value="passport">PASAPORTE</option>
+              </select>
+              <input type="text" id="identification" name="user-identification" placeholder="Documento" class="style-sbs">
             </div>
           </fieldset>
           <div class="center-images-buttons">
@@ -100,8 +106,8 @@
         </form>
       </div>
 
-        <div id="payment" class="container hide background-payment">
-          <form autocomplete="off" id="paymentwindow">
+        <div id="payment" class="container hide">
+          <form autocomplete="off" id="paymentwindow" class=" background-payment">
             <h3>Comedores Solidarios<br>
               Covid-19</h3>
               <div class="center-images-buttons">
@@ -109,12 +115,12 @@
               </div>
                 <input type="text" id="cardnumber" name="card-number" placeholder="Número de Tarjeta" class="style-box">
                 <div class="side-by-side">
-                  <input type="tel" id="expiration" name="expiration" placeholder="MM/AA" class="side-by-side">
-                  <input type="tel" id="cvv" name="cvv" placeholder="CVV" maxlenght="3" class="side-by-side">
+                  <input type="tel" id="expiration" name="expiration" placeholder="MM/AA" class="style-sbs">
+                  <input type="tel" id="cvv" name="cvv" placeholder="CVV" maxlenght="3" class="style-sbs">
                 </div>
                 <div class="side-by-side">
-                  <input type="text" id="cardholder" name="name_cardholder" placeholder="Nombre" class="side-by-side">
-                  <input type="text" id="cardholderlastname" name="lastName-cardholder" placeholder="Apellido" class="side-by-side">
+                  <input type="text" id="cardholder" name="name_cardholder" placeholder="Nombre" class="style-sbs">
+                  <input type="text" id="cardholderlastname" name="lastName-cardholder" placeholder="Apellido"  class="style-sbs">
                 </div>
                 <input type="email" id="cardholdermail" name="email-cardholder" placeholder="Correo electrónico" class="style-box"><br>
             </form>
@@ -124,38 +130,41 @@
         </div>
 
         <div id="validation" class="container hide">
-          <div class="center-images-buttons">
-            <img src="images/check.png" class="check">
-          </div>
-          <h4 id="message"></h4>
-          <p>Tu donación se ha realizado<br>
-            exitosamente!
-          </p>
-          <div class="center-images-buttons">
-            <img src="images/smile.png">
-          </div>
-          <p>Gracias, tu donación nos permite seguir ayudando a los comedores 
-            solidarios durante esta emergencia, aun en los lugares más alejados.
-          </p>
-          <div class="center-images-buttons">
-            <button type="button" id="donateagain" name="donateagain" class="style-buttons">Donar Otra Vez</button>
+          <div class="style-result">
+            <div class="center-images-buttons">
+              <img src="images/check.png" class="check">
+            </div>
+            <h4 id="message"></h4>
+            <p>Tu donación se ha realizado exitosamente!
+            </p>
+            <div class="center-images-buttons">
+              <img src="images/smile.png">
+            </div>
+            <p>Gracias, tu donación nos permite seguir ayudando a los comedores 
+              solidarios durante esta emergencia, aun en los lugares más alejados.
+            </p>
+            <div class="center-images-buttons">
+              <button type="button" id="donateagain" name="donateagain" class="style-buttons">Donar Otra Vez</button>
+            </div>
           </div>
         </div>
 
         <div id="invalidation" class="container hide">
-          <div class="center-images-buttons">
-            <img src="images/cross-mark.png">
-          </div>
-          <h4 id="messagemask"></h4>
-          <p>¡Error!<br>
-            Tu número de tarjeta no es válido.
-          </p>
-          <div class="center-images-buttons">
-            <img src="images/sad.png">
-          </div>
-          <p>Tu donación no se ha realizado exitosamente!</p>
-          <div class="center-images-buttons">
-            <button type="button" id="back" name="back" class="style-buttons">Volver a Intentarlo</button>
+          <div class="style-result">
+            <div class="center-images-buttons">
+              <img src="images/cross-mark.png">
+            </div>
+            <h4 id="messagemask"></h4>
+            <p>¡Error!<br>
+              Tu número de tarjeta no es válido.
+            </p>
+            <div class="center-images-buttons">
+              <img src="images/sad.png">
+            </div>
+            <p>Tu donación no se ha realizado exitosamente!</p>
+            <div class="center-images-buttons">
+              <button type="button" id="back" name="back" class="style-buttons">Volver a Intentarlo</button>
+            </div>
           </div>
         </div>
 

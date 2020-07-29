@@ -96,28 +96,36 @@ h2{
     text-shadow: 0 0 30px #fff;
 }
 
-input[type=text], [type=email], [type=tel],[type=number]{
+.style-box{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 5px;
     height: 39px;
-}
-
-.style-box{
     width: 100%;
 }
 
 .side-by-side{
     display:flex;
+    
+}
+
+.style-sbs{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    height: 39px;
+    width: 50%;
 }
 
 fieldset{
     margin: -10px auto 15px -51px;
     border-style: solid;
     border-width: 1px;
-    background-color: #F0F0F0;
+    background-color: rgb(245,245,245);
     padding: 1em;
     width: 310px;
     
@@ -160,9 +168,6 @@ legend{
     width: 240px;
     height: 67%;
     background: white;
-    /*
-    background: rgb(245,245,245);
-    */
     padding: 40px 100px 40px 100px;
     border-radius: 25px;
     text-align: center;
@@ -187,6 +192,7 @@ legend{
     color: black;
     background-color: white;
     box-shadow: 5px 5px black;
+    margin-bottom: 15px;
 }
 
 .style-choose:hover {
@@ -208,8 +214,8 @@ h3{
     color: #600060;
     background: #FF9FFF;
     margin-top: -40px;
-    margin-left: -100px;
-    margin-right: -100px;
+    margin-left: -60px;
+    margin-right: -66px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -218,10 +224,19 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .background-payment{
-    background-color: #F0F0F0;
+    margin: -10px auto 15px -40px;
+    background-color: rgb(245,245,245);
+    width: 315px;
+}
+
+.style-result{
+    margin: -10px auto 15px -41px;
+    width: 315px;
+    text-align: justify;
 }
 
 
