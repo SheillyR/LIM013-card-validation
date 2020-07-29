@@ -23,6 +23,8 @@ window.addEventListener('load', carousel)
 let nowDonate = document.getElementById('nowdonate')
 let welcomeWindow = document.getElementById('welcome')
 let registerWindow = document.getElementById('register')
+let monthlyButton = document.getElementById('monthly')
+
 
 // Arrow function con el evento click, que oculta la ventana de bienvenida y muestra 
 // la ventana de registro.
@@ -33,10 +35,11 @@ nowDonate.addEventListener('click', () => {
 
     registerWindow.classList.add('display')
     registerWindow.classList.remove('hide')
+
+    monthlyButton.focus()
 })
 
 let oneTimeButton = document.getElementById('onetime')
-let monthlyButton = document.getElementById('monthly')
 let oneTimeAmount = document.getElementById('onetimeamount')
 let monthlyAmount = document.getElementById('monthlyamount')
 

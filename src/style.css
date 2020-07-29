@@ -207,6 +207,11 @@ legend{
     transform: translateY(4px);
 }
 
+.style-choose:focus, .style-choose:active{
+    background-color:#e619e5;
+    color: white;
+}
+
 h3{
     position: relative;
     text-align: center;
