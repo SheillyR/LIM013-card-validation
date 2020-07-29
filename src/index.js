@@ -81,6 +81,8 @@ nextButton.addEventListener('click', () => {
 let donate = document.getElementById('donate')
 let validityResult = document.getElementById('validation')
 let invalidityResult = document.getElementById('invalidation')
+let elementValidityMessage = document.getElementById('validity-message')
+let elementInvalidityMessage = document.getElementById('invalidity-message')
 
 // Arrow function con el evento click, para el botón donar que va capturar el valor del
 // número de la tarjeta de crédito, y aplicar los métodos isvalid y maskify del objeto
@@ -88,8 +90,11 @@ let invalidityResult = document.getElementById('invalidation')
 // válido e inválido dependiendo del resultado. 
 
 donate.addEventListener('click', () => {
+
     let creditCardNumber = document.getElementById('cardnumber').value
     let mask = validator.maskify(creditCardNumber)
+    let name = document.getElementById('user-name').value
+    let userName = name.charAt(0).toUpperCase() + name.slice(1)
     
     if(validator.isValid(creditCardNumber) === true){
 
@@ -99,7 +104,10 @@ donate.addEventListener('click', () => {
         validityResult.classList.add('display')
         validityResult.classList.remove('hide')
 
-        document.getElementById('message').innerHTML = mask
+        document.getElementById('maskValidity').innerHTML = mask
+
+        elementValidityMessage.innerHTML =`<p>Gracias ${userName}, tu donación nos permite seguir ayudando a los comedores 
+        solidarios durante esta emergencia, aun en los lugares más alejados</p>`
 
     }else{
 
@@ -109,9 +117,9 @@ donate.addEventListener('click', () => {
         invalidityResult.classList.add('display')
         invalidityResult.classList.remove('hide')
 
-        document.getElementById('messagemask').innerHTML = mask
-    }
-})
+        document.getElementById('maskInvalidity').innerHTML = mask
+        elementInvalidityMessage.innerHTML = `<p>${userName} tu donación no se ha realizado exitosamente!</p>`
+}})
 
 let donateAgain = document.getElementById('donateagain')
 
@@ -124,6 +132,8 @@ donateAgain.addEventListener('click', () => {
 
     registerWindow.classList.add('display')
     registerWindow.classList.remove('hide')
+
+    monthlyButton.focus()
 })
 
 let returnWindow =  document.getElementById('back')
@@ -138,6 +148,7 @@ returnWindow.addEventListener('click', () => {
 
     paymentWindow.classList.add('display');
     paymentWindow.classList.remove('hide');
+
 })
 
 
