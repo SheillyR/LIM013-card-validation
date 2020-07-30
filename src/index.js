@@ -101,6 +101,7 @@ let nextButton = document.getElementById('next')
 let paymentWindow = document.getElementById('payment')
 let options = document.getElementsByName('options')
 let showAmount = document.getElementById('amount')
+let donate = document.getElementById('donate')
 
 /* Arrow function con el evento click, para el botón siguiente que oculta la ventana 
    de registro y muestra la ventana de pago con tarjeta de crédito. */
@@ -120,7 +121,9 @@ nextButton.addEventListener('click', () => {
         if(options[i].selectedIndex = '0'){
             for(let j = 0; j < amountOneTime.length; j++){
                 if(amountOneTime[j].checked){
-                    showAmount.innerHTML= `<p>S/. ${amountOneTime[j].value}.00</p>`
+                    showAmount.innerHTML= `S/. ${amountOneTime[j].value}.00`
+                    donate.innerHTML = `Donar S/. ${amountOneTime[j].value}.00`
+
                 }
                 amountOneTime[j].checked = false
             }
@@ -129,9 +132,10 @@ nextButton.addEventListener('click', () => {
         if(options[i].selectedIndex = '1'){
             for(let k = 0; k < amountMonthly.length; k++){
                 if(amountMonthly[k].checked ){
-                    showAmount.innerHTML = `<p>S/. ${amountMonthly[k].value}.00</p>`
+                    showAmount.innerHTML = `S/. ${amountMonthly[k].value}.00`
+                    donate.innerHTML = `Donar S/. ${amountMonthly[k].value}.00`
                 }
-                amountMonthly[k].checked = false
+               amountMonthly[k].checked = false
             }
 
         } 
@@ -139,11 +143,12 @@ nextButton.addEventListener('click', () => {
     }
 })
 
-let donate = document.getElementById('donate')
+
 let validityResult = document.getElementById('validation')
 let invalidityResult = document.getElementById('invalidation')
 let elementValidityMessage = document.getElementById('validity-message')
 let elementInvalidityMessage = document.getElementById('invalidity-message')
+let amountResultTrue = document.getElementById('amount-result-t')
 
 /* Arrow function con el evento click, para el botón donar que va capturar el valor del
    número de la tarjeta de crédito, y aplicar los métodos isvalid y maskify del objeto
