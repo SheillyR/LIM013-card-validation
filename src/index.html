@@ -67,7 +67,7 @@
               <div id="onetimeamount" class="hide">
                 <input type="radio" id="thirty" class="donationamount" name="donation-one-time" value="30">
                 <label for="thirty">S/. 30</label><br>
-                <input type="radio" id="fifty" class="donationamount" name="donation-one-time" value="50">
+                <input type="radio" id="fifty" class="donationamount" name="donation-one-time" value="50" checked="checked">
                 <label for="fifty">S/. 50</label><br>
                 <input type="radio" id="eighty" class="donationamount" name="donation-one-time" value="80">
                 <label for="eighty">S/. 80</label>
@@ -75,7 +75,7 @@
               <div id="monthlyamount" class="display">
                 <input type="radio" id="twenty" class="donationamount" name="donation-monthly" value="20">
                 <label for="twenty">S/. 20</label><br>
-                <input type="radio" id="sixty" class="donationamount" name="donation-monthly" value="60">
+                <input type="radio" id="sixty" class="donationamount" name="donation-monthly" value="60" checked="checked">
                 <label for="sixty">S/. 60</label><br>
                 <input type="radio" id="ninety" class="donationamount" name="donation-monthly" value="90">
                 <label for="ninety">S/. 90</label>
@@ -114,8 +114,8 @@
                 <img src="images/creditcard.jpg">
               </div>
               <p>Monto de la donación</p>
-              <div id = "amount">
-              </div>
+              <p id = "amount">
+              </p>
                 <input type="text" id="cardnumber" name="card-number" placeholder="Número de Tarjeta" class="style-box">
                 <div class="side-by-side">
                   <input type="tel" id="expiration" name="expiration" placeholder="MM/AA" class="style-sbs">
@@ -141,6 +141,7 @@
             <p1>¡Listo!<br>
               Tú número de tarjeta es válido.
             </p1><br>
+            <p id="amount"></p>
             <p1>Tu donación se ha realizado exitosamente!
             </p1>
             <div class="center-images-buttons">
@@ -162,6 +163,7 @@
             <p1>¡Error!<br>
               Tu número de tarjeta no es válido.
             </p1>
+            <p id="amount"></p>
             <p id="invalidity-message"></p>
             <div class="center-images-buttons">
               <img src="images/sad.png">
