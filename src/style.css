@@ -97,6 +97,7 @@ h2{
     text-shadow: 0 0 30px #fff;
 }
 
+
 .style-box{
     padding: 10px;
     border: 1px solid #ccc;
@@ -162,12 +163,12 @@ legend{
     transform: translateY(4px);
 }
 .container{
-    position: absolute;
+    position: fixed;
     top: 51%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 240px;
-    height: 67%;
+    height: 580px;
     background: white;
     padding: 40px 100px 40px 100px;
     border-radius: 25px;

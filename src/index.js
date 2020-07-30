@@ -83,25 +83,13 @@ monthlyButton.addEventListener('click', () => {
     otherAmount.value = ''
 })
 
-/* if(otherAmount != ''){
-    for(let j = 0; j < amountOneTime.length; j++){
-        if(amountOneTime[j].checked){
-            amountOneTime[j].checked = false
-        }
-    }
-    for(let k = 0; k < amountMonthly.length; k++){
-        if(amountMonthly[k].checked ){
-            amountMonthly[k].checked = false
-        }
-    }
-}
-*/
-
 let nextButton = document.getElementById('next')
 let paymentWindow = document.getElementById('payment')
-let options = document.getElementsByName('options')
 let showAmount = document.getElementById('amount')
 let donate = document.getElementById('donate')
+let amountResultTrue = document.getElementById('amount-result-t')
+let amountResultFalse = document.getElementById('amount-result-f')
+
 
 /* Arrow function con el evento click, para el botón siguiente que oculta la ventana 
    de registro y muestra la ventana de pago con tarjeta de crédito. */
@@ -113,33 +101,29 @@ nextButton.addEventListener('click', () => {
     paymentWindow.classList.add('display')
     paymentWindow.classList.remove('hide')
     
-    if (otherAmount.value !== ''){
-        showAmount.innerHTML = `<p>S/. ${otherAmount.value}</p>`
-    }
-    
-    for (let i = 0; i < options.length; i++){
-        if(options[i].selectedIndex = '0'){
-            for(let j = 0; j < amountOneTime.length; j++){
-                if(amountOneTime[j].checked){
-                    showAmount.innerHTML= `S/. ${amountOneTime[j].value}.00`
-                    donate.innerHTML = `Donar S/. ${amountOneTime[j].value}.00`
-
-                }
-                amountOneTime[j].checked = false
+    for(let j = 0; j < amountOneTime.length; j++){
+        if(amountOneTime[j].checked){
+            showAmount.innerHTML= `S/. ${amountOneTime[j].value}.00`
+            donate.innerHTML = `Donar S/. ${amountOneTime[j].value}.00`
+            amountResultTrue.innerHTML =`S/. ${amountOneTime[j].value}.00`
+            amountResultFalse.innerHTMLinnerHTML = `S/. ${amountOneTime[j].value}.00`
             }
-
+            amountOneTime[j].checked = false        
         }
-        if(options[i].selectedIndex = '1'){
-            for(let k = 0; k < amountMonthly.length; k++){
-                if(amountMonthly[k].checked ){
-                    showAmount.innerHTML = `S/. ${amountMonthly[k].value}.00`
-                    donate.innerHTML = `Donar S/. ${amountMonthly[k].value}.00`
-                }
-               amountMonthly[k].checked = false
-            }
-
-        } 
-
+    for(let k = 0; k < amountMonthly.length; k++){
+        if(amountMonthly[k].checked ){
+            showAmount.innerHTML = `S/. ${amountMonthly[k].value}.00`
+            donate.innerHTML = `Donar S/. ${amountMonthly[k].value}.00`
+            amountResultTrue.innerHTML = `S/. ${amountMonthly[k].value}.00`
+            amountResultFalse.innerHTML = `S/. ${amountMonthly[k].value}.00`
+        }
+        amountMonthly[k].checked = false
+    }
+    if (otherAmount.value !== ''){
+        showAmount.innerHTML = `S/. ${otherAmount.value}`
+        donate.innerHTML = `Donar S/. ${otherAmount.value}`
+        amountResultTrue.innerHTML = `S/. ${otherAmount.value}`
+        amountResultFalse.innerHTML = `S/. ${otherAmount.value}`
     }
 })
 
@@ -148,7 +132,7 @@ let validityResult = document.getElementById('validation')
 let invalidityResult = document.getElementById('invalidation')
 let elementValidityMessage = document.getElementById('validity-message')
 let elementInvalidityMessage = document.getElementById('invalidity-message')
-let amountResultTrue = document.getElementById('amount-result-t')
+
 
 /* Arrow function con el evento click, para el botón donar que va capturar el valor del
    número de la tarjeta de crédito, y aplicar los métodos isvalid y maskify del objeto
