@@ -62,23 +62,23 @@
         <form autocomplete="off" id="wanttodonate" class="container">
           <fieldset class="register">
             <legend>Quiero Donar</legend>
-            <button type="button" id="onetime" name="onetime" class="style-choose">Única</button>
-            <button type="button" id="monthly" name="monthly" class="style-choose">Mensual</button>
+            <button type="button" id="onetime" name="options" class="style-choose">Única</button>
+            <button type="button" id="monthly" name="options" class="style-choose">Mensual</button>
               <div id="onetimeamount" class="hide">
-                <input type="radio" id="thirty" class="donationamount" name="donation-one-time">
-                <label for="thirty">S/.30</label><br>
-                <input type="radio" id="fifty" class="donationamount" name="donation-one-time" checked="checked">
-                <label for="fifty">S/.50</label><br>
-                <input type="radio" id="eighty" class="donationamount" name="donation-one-time">
-                <label for="eighty">S/.80</label>
+                <input type="radio" id="thirty" class="donationamount" name="donation-one-time" value="30">
+                <label for="thirty">S/. 30</label><br>
+                <input type="radio" id="fifty" class="donationamount" name="donation-one-time" value="50">
+                <label for="fifty">S/. 50</label><br>
+                <input type="radio" id="eighty" class="donationamount" name="donation-one-time" value="80">
+                <label for="eighty">S/. 80</label>
               </div>
               <div id="monthlyamount" class="display">
-                <input type="radio" id="twenty" class="donationamount" name="donation-monthly">
-                <label for="twenty">S/.20</label><br>
-                <input type="radio" id="sixty" class="donationamount" name="donation-monthly" checked="checked">
-                <label for="sixty">S/.60</label><br>
-                <input type="radio" id="ninety" class="donationamount" name="donation-monthly">
-                <label for="ninety">S/.90</label>
+                <input type="radio" id="twenty" class="donationamount" name="donation-monthly" value="20">
+                <label for="twenty">S/. 20</label><br>
+                <input type="radio" id="sixty" class="donationamount" name="donation-monthly" value="60">
+                <label for="sixty">S/. 60</label><br>
+                <input type="radio" id="ninety" class="donationamount" name="donation-monthly" value="90">
+                <label for="ninety">S/. 90</label>
               </div>
             <input type="number" id="otheramount" name="otheramount" placeholder="Otro monto (S/.)" class="style-box">
           </fieldset>
@@ -114,6 +114,8 @@
                 <img src="images/creditcard.jpg">
               </div>
               <p>Monto de la donación</p>
+              <div id = "amount">
+              </div>
                 <input type="text" id="cardnumber" name="card-number" placeholder="Número de Tarjeta" class="style-box">
                 <div class="side-by-side">
                   <input type="tel" id="expiration" name="expiration" placeholder="MM/AA" class="style-sbs">
@@ -160,10 +162,10 @@
             <p1>¡Error!<br>
               Tu número de tarjeta no es válido.
             </p1>
+            <p id="invalidity-message"></p>
             <div class="center-images-buttons">
               <img src="images/sad.png">
             </div>
-            <p id="invalidity-message"></p>
             <div class="center-images-buttons">
               <button type="button" id="back" name="back" class="style-buttons">Volver a Intentarlo</button>
             </div>
