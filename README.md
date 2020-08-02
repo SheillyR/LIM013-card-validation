@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Introducción](#1-introducción)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
@@ -11,20 +11,22 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Introducción
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+Los [comedores populares] (https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1720/) son Organizaciones Sociales de Base conformadas por mujeres, cuya actividad principal es la preparación de alimentos y el apoyo social, destinado a personas y familias vulnerables y en alto riesgo nutricional, especialmente niños, madres gestantes, madres lactantes y adultos mayores.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+Al 31 de diciembre de 2018, las municipalidades registraron 15 mil 140 organizaciones sociales de comedores populares que beneficiaron a un total de 764 mil 618 personas. El mayor porcentaje de población beneficiaria se encuentra en los distritos del ámbito de la Provincia de Lima (25,0%), le sigue los departamentos de Piura (8,4%), Cajamarca (7,7%), La Libertad (6,1%), Región Lima (5,8%), Áncash (5,4%) y Lambayeque (4,4%), entre los principales.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+Cabe resaltar que, en la provincia de Lima, el mayor número de beneficiarios corresponde a los distritos de Comas (28 mil 32), Villa El Salvador (21 mil 39), San Juan de Lurigancho (18 mil 824) y San Juan de Miraflores (17 mil 663), quienes a su vez son los distritos con mayor número de beneficiarios/as a nivel nacional.
+<P align="center">
+Cuadro N°1
+PERÚ: BENEFICIARIOS DE LOS COMEDORES POPULARES, SEGÚN DEPARTAMENTO, 
+AL 31 DE DICIEMBRE DE 2018
+</P>
+![Cuadro de beneficiarios de los comedores populares, Fuente: INEI]
+<p align="center">
+  <img width="460" height="300" src="https://ibb.co/q9LnTx2">
+</p>
 
 ## 2. Resumen del proyecto
 
