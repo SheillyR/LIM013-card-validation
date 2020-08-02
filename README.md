@@ -67,9 +67,9 @@ A través del aplicativo web, que contará con un sistema de donaciones de monto
 
 * Primer prototipo en papel
 <p align="center">
-  <img width="75%" height="75%" src="https://i.ibb.co/mzhWYyk/Primer-prototipo-papel-0.jpg">
+  <img width="50%" height="50%" src="https://i.ibb.co/mzhWYyk/Primer-prototipo-papel-0.jpg">
 
-  <img width="75%" height="75%" src="https://i.ibb.co/Wz674W9/Primer-prototipo-papel.jpg">
+  <img width="50%" height="50%" src="https://i.ibb.co/Wz674W9/Primer-prototipo-papel.jpg">
 </p>
 
 * Luego valida esta solución con una compañera (pedir feedback).
