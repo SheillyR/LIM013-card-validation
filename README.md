@@ -7,7 +7,7 @@
 * [3. Problemática y Justificación](#3-problemática-y-justificación)
 * [4. Definición del producto](#4-definición-del-producto)
 * [5. UX (Diseño de experiencia de usuario)](#5-UX-Diseño-de-experiencia-de-usuario)
-* [6. Interfaz de usuario (UI)](#6-Interfaz-de-usuario-(UI)
+* [6. Interfaz de usuario (UI)](#6-Interfaz-de-usuario-UI)
 
 ***
 
