@@ -51,6 +51,7 @@ AL 31 DE DICIEMBRE DE 2018
 </p>
 Fuente: Instituto Nacional de Estadística e Informática - Registo Nacional de Municipalidades 2019.
 
+
 Por los argumentos expuestos, se ideó crear una plataforma donde las personas naturales o jurídicas solidarias de buen corazón puedan saber la situación que está enfrentando la población actualmente a raíz de la pandemia, de manera que puedan contribuir de manera económica, ya sea a través de una donación única o mensual. Con estas donaciones, se puede ayudar a contrarrestar la aceleración de la propagación del COVID-19, ya que podría financiarse no solo los alimentos que son muy importantes sino también los implementos necesarios para cumplir las medidas y protocolos dispuestos por el Ministerio de Salud.
 
 ## 4. Definición del producto
@@ -66,9 +67,9 @@ A través del aplicativo web, que contará con un sistema de donaciones de monto
 
 * Primer prototipo en papel
 <p align="center">
-  <img width="100%" height="100%" src="https://i.ibb.co/mzhWYyk/Primer-prototipo-papel-0.jpg">
+  <img width="75%" height="75%" src="https://i.ibb.co/mzhWYyk/Primer-prototipo-papel-0.jpg">
 
-  <img width="100%" height="100%" src="https://i.ibb.co/Wz674W9/Primer-prototipo-papel.jpg">
+  <img width="75%" height="75%" src="https://i.ibb.co/Wz674W9/Primer-prototipo-papel.jpg">
 </p>
 
 * Luego valida esta solución con una compañera (pedir feedback).
@@ -78,25 +79,25 @@ A través del aplicativo web, que contará con un sistema de donaciones de monto
 #### Ventana de Bienvenida
 
 <p align="center">
-  <img width="100%" height="100%" src="https://i.ibb.co/CMZ7Bm8/Welcome.png">
+  <img width="75%" height="75%" src="https://i.ibb.co/CMZ7Bm8/Welcome.png">
 </p>
 
 #### Ventana de Registro y Monto Elegido
 
 <p align="center">
-  <img width="100%" height="100%" src="https://i.ibb.co/7rPqjB8/Register.png">
+  <img width="75%" height="75%" src="https://i.ibb.co/7rPqjB8/Register.png">
 </p>
 
 #### Ventana de Pago
 
 <p align="center">
-  <img width="100%" height="100%" src="https://i.ibb.co/dkgVLTD/Payment-Window.png">
+  <img width="75%" height="75%" src="https://i.ibb.co/dkgVLTD/Payment-Window.png">
 </p>
 
 #### Ventana de Validación e Invalidación de la Operación
 
 <p align="center">
-  <img width="100%" height="100%" src="https://i.ibb.co/mGNKQ6s/Validation-Invalidation.png">
+  <img width="75%" height="75%" src="https://i.ibb.co/mGNKQ6s/Validation-Invalidation.png">
 </p>
 
 ## 6. Interfaz de usuario (UI)
