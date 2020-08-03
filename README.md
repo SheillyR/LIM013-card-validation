@@ -6,8 +6,8 @@
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Problemática y Justificación](#3-problemática-y-justificación)
 * [4. Definición del producto](#4-definición-del-producto)
-* [5. UX (Diseño de experiencia de usuario)](#5-UX-Diseño-de-experiencia-de-usuario)
-* [6. Interfaz de usuario (UI)](#6-Interfaz-de-usuario-UI)
+* [5. Diseño de experiencia de usuario](#5-Diseño-de-experiencia-de-usuario)
+* [6. Interfaz de usuario](#6-Interfaz-de-usuario)
 
 ***
 
@@ -47,7 +47,7 @@ PERÚ: BENEFICIARIOS DE LOS COMEDORES POPULARES, SEGÚN DEPARTAMENTO,
 AL 31 DE DICIEMBRE DE 2018
 <p>
 <p align="center">
-  <img width="100%" height="100%" src="https://i.ibb.co/ZKRJqNb/Cuadro-INEI.png">
+  <img width="75%" height="75%" src="https://i.ibb.co/ZKRJqNb/Cuadro-INEI.png">
 </p>
 Fuente: Instituto Nacional de Estadística e Informática - Registo Nacional de Municipalidades 2019.
 
@@ -56,14 +56,13 @@ Por los argumentos expuestos, se ideó crear una plataforma donde las personas n
 
 ## 4. Definición del producto
 
-El Informe sobre tendencias globales de donación de 2018
-(https://givingreport.ngo/wp-content/uploads/2018-GivingReport-Spanish.pdf), analizó los hábitos de donación de donantes de todo el mundo. Esta encuesta fue promocionada y realizada por Internet en su totalidad y se basa en los resultados de la encuesta de 6057 donantes pertenecientes a 119 países. Los resultados más resaltantes fueron que el 54% de las personas prefieren donar por internet con una tarjeta de crédito o débito, un 45% de los donantes está inscrito en un programa de donaciones mensuales, 69% prefieren ser agradecidos por sus donaciones a través de un correo electrónico.
+[El Informe sobre tendencias globales de donación de 2018](https://givingreport.ngo/wp-content/uploads/2018-GivingReport-Spanish.pdf), analizó los hábitos de donación de donantes de todo el mundo. Esta encuesta fue promocionada y realizada por Internet en su totalidad y se basa en los resultados de la encuesta de 6057 donantes pertenecientes a 119 países. Los resultados más resaltantes fueron que el 54% de las personas prefieren donar por internet con una tarjeta de crédito o débito, un 45% de los donantes está inscrito en un programa de donaciones mensuales, 69% prefieren ser agradecidos por sus donaciones a través de un correo electrónico.
 
 Año tras año las donaciones a causas sociales gana más adeptos en el mundo y demuestra que la solidaridad, el altruismo y la empatía son valores vigentes y necesarios. Lo principales usuarios del producto son personas naturales y jurídicas que toman la decisión de donar dinero a causas sociales para reforzar su compromiso social, son usuarios que reconocen la existencia de un problema o una carencia en su entorno que necesita ser solventado y a través de está plataforma no necesitan movilizarse para tomar acción y lograr apoyar a estas causas. Además el sentirse bien consigo mismo y de saber que de alguna manera están formando parte de la solución es otra de las razones habituales por las cuales donan dinero. 
 
 A través del aplicativo web, que contará con un sistema de donaciones de monto único o mensual se pueda lograr a ayudar a miles de personas. Este sistema de recaudación de fondos está destinado a servir como herramienta a organizaciones sociales como lo son los comedores populares, y para evitar problemas se implementará ciertos sistemas de seguridad. Los usuarios pueden donar rápidamente desde la comodidad de sus hogares y de esta manera puede darse una respuesta rápida a esta emergencia, que requiere una atención inmediata. Además, los datos anteriormente citados nos muestran que existe un gran porcentaje de personas que prefieren donar por intenet haciendo uso de una tarjeta de crédito o débito.
 
-## 5. UX (Diseño de experiencia de usuario)
+## 5. Diseño de experiencia de usuario
 
 * Primer prototipo en papel
 <p align="center">
@@ -76,31 +75,31 @@ A través del aplicativo web, que contará con un sistema de donaciones de monto
 
 * Prototipo usando la herramienta de diseño Balsamiq
 
-#### Ventana de Bienvenida
+### Ventana de Bienvenida
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/CMZ7Bm8/Welcome.png">
 </p>
 
-#### Ventana de Registro y Monto Elegido
+### Ventana de Registro y Monto Elegido
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/7rPqjB8/Register.png">
 </p>
 
-#### Ventana de Pago
+### Ventana de Pago
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/dkgVLTD/Payment-Window.png">
 </p>
 
-#### Ventana de Validación e Invalidación de la Operación
+### Ventana de Validación e Invalidación de la Operación
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/mGNKQ6s/Validation-Invalidation.png">
 </p>
 
-## 6. Interfaz de usuario (UI)
+## 6. Interfaz de usuario 
 
 La interfaz debe permitir al usuario:
 
@@ -132,13 +131,7 @@ Debe contener lo siguiente:
   4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
   5. Imagen del prototipo final.
 
-## 6. Pistas, tips y lecturas complementarias
 
-### Primeros pasos
-
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-  tu _fork_ a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
 
 
 
