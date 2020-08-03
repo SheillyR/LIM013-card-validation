@@ -6,8 +6,8 @@
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Problemática y Justificación](#3-problemática-y-justificación)
 * [4. Definición del producto](#4-definición-del-producto)
-* [5. Diseño de experiencia de usuario](#5-Diseño-de-experiencia-de-usuario)
-* [6. Interfaz de usuario](#6-Interfaz-de-usuario)
+* [5. Diseño de experiencia de usuario](#5-diseño-de-experiencia-de-usuario)
+* [6. Interfaz de usuario](#6-interfaz-de-usuario)
 
 ***
 
