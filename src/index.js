@@ -127,6 +127,60 @@ nextButton.addEventListener('click', () => {
     }
 })
 
+let cardNumber = document.getElementById('cardnumber')
+
+cardNumber.addEventListener('keypress', () => {
+    if (event.which != 46 && (event.which < 47 || event.which > 59))
+    {
+        event.preventDefault();
+        if (event.which == 46) {
+            event.preventDefault();
+        }
+    }
+});
+
+cardNumber.addEventListener('keyup', () =>{
+
+    if(cardNumber.value == 0 ){
+        cardNumber.style.background = '#ffdfd4'
+    } else {
+        cardNumber.style.background = 'white'   
+    } 
+    if(cardNumber.value.length == 15 || cardNumber.value.length == 16 ){   
+        cardNumber.style.background = '#c7f6c7'
+    }
+    
+})
+
+
+let expiration = document.getElementById('expiration')
+let cvv = document.getElementById('cvv')
+
+expiration.addEventListener('keyup', () =>{
+
+    if(expiration.value == 0 ){
+        expiration.style.background = '#ffdfd4'
+    } else {
+        expiration.style.background = 'white'   
+    } 
+    if(expiration.value.length == 5){   
+        expiration.style.background = '#c7f6c7'
+    }
+    
+})
+
+cvv.addEventListener('keyup', () =>{
+
+    if(cvv.value == 0 ){
+        cvv.style.background = '#ffdfd4'
+    } else {
+        cvv.style.background = 'white'   
+    } 
+    if(cvv.value.length == 3){   
+        cvv.style.background = '#c7f6c7'
+    }
+    
+})
 
 let validityResult = document.getElementById('validation')
 let invalidityResult = document.getElementById('invalidation')
@@ -140,13 +194,13 @@ let elementInvalidityMessage = document.getElementById('invalidity-message')
    válido e inválido dependiendo del resultado. */
 
 donate.addEventListener('click', () => {
-
-    let creditCardNumber = document.getElementById('cardnumber').value
-    let mask = validator.maskify(creditCardNumber)
+    
+    
+    let mask = validator.maskify(cardNumber.value)
     let name = document.getElementById('user-name').value
     let userName = name.charAt(0).toUpperCase() + name.slice(1)
-    
-    if(validator.isValid(creditCardNumber) === true){
+
+    if(validator.isValid(cardNumber.value) === true){
 
         paymentWindow.classList.add('hide')
         paymentWindow.classList.remove('display')

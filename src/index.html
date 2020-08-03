@@ -101,7 +101,7 @@
             </div>
           </fieldset>
           <div class="center-images-buttons">
-            <button type="button" id="next" name="next" class="style-buttons">Siguiente</button>
+            <button type="button" id="next" name="next" class="style-buttons style-next">Siguiente</button>
           </div>
         </form>
       </div>
@@ -114,11 +114,11 @@
                 <img src="images/creditcard.jpg">
               </div>
               <p>Monto de la donación</p>
-                <p id = "amount">
+                <p id = "amount" class="amount-result-tex">
                 </p>
                 <input type="text" id="cardnumber" name="card-number" placeholder="Número de Tarjeta" class="style-box">
                 <div class="side-by-side">
-                  <input type="tel" id="expiration" name="expiration" placeholder="MM/AA" class="style-sbs">
+                  <input type="tel" id="expiration" name="expiration" placeholder="MM/AA" class="style-sbs" >
                   <input type="tel" id="cvv" name="cvv" placeholder="CVV" maxlenght="3" class="style-sbs">
                 </div>
                 <div class="side-by-side">
@@ -128,7 +128,7 @@
                 <input type="email" id="cardholdermail" name="email-cardholder" placeholder="Correo electrónico" class="style-box"><br>
             </form>
           <div class="center-images-buttons">
-            <button type="button" id="donate" name="donate" class="style-buttons">Donar</button>
+            <button type="button" id="donate" name="donate" class="style-buttons amount-result-tex" >Donar</button>
           </div>
         </div>
 
@@ -138,16 +138,16 @@
               <img src="images/check.png" class="check">
             </div>
             <h4 id="maskValidity" class="maskify"></h4>
-            <p1>¡Listo!<br>
+            <p>¡Listo!<br>
               Tú número de tarjeta es válido.
-            </p1><br>
-            <p id="amount-result-t"></p>
-            <p1>Tu donación se ha realizado exitosamente!
-            </p1>
+            </p>
+            <p id="amount-result-t" class="amount-result-tex"> </p>
+            <p>Tu donación se ha realizado exitosamente!
+            </p>
             <div class="center-images-buttons">
               <img src="images/smile.png">
             </div>
-            <p id="validity-message"></p>
+            <p class="center-text-validation" id="validity-message"></p>
             <div class="center-images-buttons">
               <button type="button" id="donateagain" name="donateagain" class="style-buttons">Donar Otra Vez</button>
             </div>
@@ -163,7 +163,7 @@
             <p1>¡Error!<br>
               Tu número de tarjeta no es válido.
             </p1>
-            <p id="amount-result-f"></p>
+            <p id="amount-result-f" class="amount-result-tex"></p>
             <p id="invalidity-message"></p>
             <div class="center-images-buttons">
               <img src="images/sad.png">

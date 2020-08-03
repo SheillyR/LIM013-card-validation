@@ -75,25 +75,25 @@ A través del aplicativo web, que contará con un sistema de donaciones de monto
 
 * Prototipo usando la herramienta de diseño Balsamiq
 
-### Ventana de Bienvenida
+#### Ventana de Bienvenida
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/CMZ7Bm8/Welcome.png">
 </p>
 
-### Ventana de Registro y Monto Elegido
+#### Ventana de Registro y Monto Elegido
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/7rPqjB8/Register.png">
 </p>
 
-### Ventana de Pago
+#### Ventana de Pago
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/dkgVLTD/Payment-Window.png">
 </p>
 
-### Ventana de Validación e Invalidación de la Operación
+#### Ventana de Validación e Invalidación de la Operación
 
 <p align="center">
   <img width="75%" height="75%" src="https://i.ibb.co/mGNKQ6s/Validation-Invalidation.png">
