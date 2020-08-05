@@ -105,13 +105,48 @@ Por los argumentos expuestos, se ideó crear una plataforma donde las personas n
 
 ## 6. Interfaz de usuario 
 
-La interfaz debe permitir al usuario:
+La interfaz permite al usuario interactuar con las siguientes ventanas:
 
-* Insertar el número que queremos validar.
-* Ver el resultado si es válido o no.
-* Ocultar todos los dígitos de su número de tarjeta menos los últimos
-4 caracteres.
-* No debe poder ingresar un campo vacío.
+#### Ventana de Bienvenida
+
+* Opción de dar click en el botón Donar.
+
+#### Ventana de Registro
+
+  * Elegir el monto de la donación.
+  * En el área de registro:
+    * Ingresar su nombre, apellido.
+    * Ingresar su correo electrónico.
+    * Ingresar su número de celular.
+    * Seleccionar el tipo de documento e ingresar el número del documento.
+  * Dar click en el botón Siguiente.
+
+#### Ventana de Pago
+
+* Visualizar el monto de la donación.
+* Ingresar su número de tarjeta.
+* Ingresar la fecha de expiración y el código CVV de la tarjeta de crédito o débito.
+* Ingresar el nombre y apellido del titular de la tarjeta.
+* Ingresar un correo electrónico, donde desee recepcionar la información de su pago.
+* Dar click en el botón Donar.
+
+#### Ventana de Validación
+
+* Si los datos de la tarjeta fueron ingresados correctamente, el usuario podra visualizar la siguiente información:
+  * Ver los últimos 4 dígitos de la tarjeta.
+  * Ver si el número de tarjeta es válido.
+  * El monto a donar que seleccionamos.
+  * Un agradecimiento por la donación.
+  * La opción de Donar otra vez, haciendo click en el botón.
+
+#### Ventana de Invalidación
+
+* Si los datos de la tarjeta fueron ingresados incorrectamente, el usuario podra visualizar la siguiente información:
+  * Ver los últimos 4 dígitos de la tarjeta.
+  * Ver el error, que muestra que el número de tarjeta no es válido.
+  * El monto a donar que seleccionamos.
+  * Un mensaje que nos invita a volver a intentarlo.
+  * La opción de Volver a Intentarlo, haciendo click en el botón.
 
 ## 7. Consideraciones técnicas
 
