@@ -1,7 +1,7 @@
 const validator = {
 
     isValid: function (creditCardNumber){
-    creditCardNumber = creditCardNumber.split(' ').join("");
+    creditCardNumber = creditCardNumber.split(' ').join("")
     if (parseInt(creditCardNumber) <= 0 || creditCardNumber.length > 16) {
         return false;
     }

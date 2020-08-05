@@ -26,7 +26,7 @@ h1{
 .hide{
     display: none;
 }
-.welcome{
+.welcome-window{
     margin: 0;
     overflow:auto;
     box-sizing: border-box;
@@ -40,7 +40,7 @@ h1{
     margin-top: 2%;
 }
 
-.slides{
+.slideshow{
     width: 740px;
     height: 424px;
 }
@@ -64,12 +64,12 @@ h1{
       height: 460px;
   }
 
-.first-button{
+.now-donate{
     margin-left: 43%;
     margin-top: 32%;
 }
 
-.style-button{
+.style-button-now-donate{
     padding: 15px 20px;
     font-weight: bold;
     font-size: 24px;
@@ -82,12 +82,16 @@ h1{
     box-shadow: 5px 5px black;
 }
 
-.style-button:hover {background-color:#FFF633}
+.style-button-now-donate:hover {background-color:#FFF633}
 
-.style-button:active {
+.style-button-now-donate:active {
     background-color:#FFF633;
     box-shadow: 5px 5px #666;
     transform: translateY(4px);
+}
+
+.position-now-donate-button{
+    position: relative;
 }
 
 h2{
@@ -98,8 +102,23 @@ h2{
     text-shadow: 0 0 30px #fff;
 }
 
+.container{
+    position: fixed;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 65%;
+    background: white;
+    padding: 40px 100px 40px 100px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px #8510d8;
+}
 
-.style-box{
+.style-boxes{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -112,10 +131,9 @@ h2{
 
 .side-by-side{
     display:flex;
-    
 }
 
-.style-sbs{
+.boxes-side-by-side{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -143,7 +161,7 @@ legend{
     text-align: left;
 }
 
-.style-buttons{
+.yellow-buttons{
     display:inline-block;
     padding: 10px 20px;
     font-weight: bold;
@@ -158,35 +176,15 @@ legend{
     
 }
 
-.style-buttons:hover {background-color:#FFF633}
+.yellow-buttons:hover {background-color:#FFF633}
 
-.style-buttons:active {
+.yellow-buttons:active {
     background-color:#FFF633;
     box-shadow: 5px 5px #666;
     transform: translateY(4px);
 }
-.container{
-    position: fixed;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 240px;
-    height: 65%;
-    background: white;
-    padding: 40px 100px 40px 100px;
-    border-radius: 25px;
-    text-align: center;
-    justify-content: center;
-    font-weight: bold;
-    box-shadow: 0 0 10px #8510d8;
-}
 
-.position{
-    position: relative;
-
-}
-
-.style-choose{
+.chosse-button{
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
@@ -200,30 +198,30 @@ legend{
     margin-bottom: 15px;
 }
 
-.style-choose:hover {
+.chosse-button:hover {
     background-color:#ff00ff;
     color: white;
 }
 
-.style-choose:active {
+.chosse-button:active {
     background-color:#e619e5;
     color: white;
     box-shadow: 5px 5px #666;
     transform: translateY(4px);
 }
 
-.style-choose:focus, .style-choose:active{
+.chosse-button:focus {
     background-color:#e619e5;
     color: white;
 }
 
-.donationamount{
+.donation-amount{
     margin-top: 3%;
     margin-bottom: 5%;
 }
 
-.style-next{
-    margin-top: 7%;
+.next-button{
+    margin-top: 5%;
 }
 
 h3{
@@ -239,29 +237,29 @@ h3{
     border-top-right-radius: 25px;
 }
 
-.center-images-buttons{
+.center-images-and-buttons{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.background-payment{
+.payment-form{
     margin: -10px auto 15px -40px;
     background-color: rgb(245,245,245);
     width: 315px;
 }
 
-.style-result{
+.result {
     margin: -10px auto 15px -46px;
     width: 140%;
 }
 
-.style-result .center-text-validation{
+.result  .center-text-validation{
     text-align: justify;
 }
 
-.style-result .amount-result-tex{
+.result  .element-donation-amount{
     font-size: 24px;
 }
 
@@ -269,6 +267,9 @@ h3{
   border: 3px solid black;
   padding: 10px;
   text-align: center;
+}
+.try-again-position{
+    margin: 21%;
 }
 
 
