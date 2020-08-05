@@ -101,11 +101,8 @@ otherAmount.addEventListener('keyup', () => {
 } )
 
 let onlyNumber = () => {
-    if (event.which != 46 && (event.which < 47 || event.which > 59)){
+    if (event.which <= 47 || event.which >= 58)
         return event.preventDefault()
-    }else if (event.which == 46) {
-            return event.preventDefault()
-        }
     }
 
 let phone = document.getElementById('phone')
